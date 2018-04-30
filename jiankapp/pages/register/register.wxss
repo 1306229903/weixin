@@ -1,0 +1,49 @@
+/* pages/around/login.wxss */
+page{
+  background: #e6e6e6
+}
+.header{
+ background: #fff;
+ margin-top: 50rpx
+}
+.header image{
+    width: 50rpx;
+      height: 50rpx;
+      padding: 20rpx;
+}
+.header input{
+ padding: 20rpx;
+ font-size: 30rpx;
+
+}
+.password,.username{
+display: flex;
+border-bottom: 1rpx #ccc solid;
+align-items: center
+}
+.input-placeholder
+{
+ color: #bfbfbf;
+ font-size: 30rpx;
+}
+.main{
+  margin-top:60rpx;
+margin-bottom:130rpx;
+
+}
+.maintext{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50rpx
+}
+.main button{
+  background: #32CD32;
+  color: #fff;
+  width: 80%;
+  font-size: 34rpx;
+}
+.maintext{
+    font-size: 32rpx
+}
+

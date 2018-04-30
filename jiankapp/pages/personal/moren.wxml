@@ -1,0 +1,8 @@
+ <template name="user">
+ <image src='{{item.userimg}}'></image>
+      <text>{{item.username}}</text>
+      </template>
+       <template name="usermoren">
+ <image src='/images/1.png'></image>
+      <text bindtap="deng">登录 / 注册</text>
+      </template>

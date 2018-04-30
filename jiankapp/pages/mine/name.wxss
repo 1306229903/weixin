@@ -1,0 +1,21 @@
+page{
+  background: #e6e6e6;
+}
+input{
+  background: #fff;
+  padding: 20rpx ;
+  font-size: 36rpx;
+  padding-left: 25rpx
+}
+button{
+  background: #32CD32;
+  color: #fff;
+  width: 80%;
+  font-size: 34rpx;
+  margin-top: 50rpx
+}
+view{
+  padding: 20rpx;
+    font-size: 30rpx;
+  color: #888
+}

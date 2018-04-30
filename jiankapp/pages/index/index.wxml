@@ -1,0 +1,54 @@
+<view class="container">
+  <view class="page-body" bindscrolltolower="loadMore">
+    <!--search-->
+    <view class='searchview' bindtap='searchye'>
+      <input class='search' placeholder='搜索你喜欢的新闻或信息'></input>
+      <icon type='search' color='white'></icon>
+    </view>
+
+
+    <!--banner-->
+    <view class="swiper">
+      <swiper class="swiper_box" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorcolor}}" indicator-active-color=" {{indicatoractivecolor}}">
+        <block wx:for="{{san}}" wx:key="item.id">
+          <swiper-item>
+            <text>{{item.title}}</text>
+            <image src="{{item.img}}" class="slide-image" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+
+    <!-- main -->
+
+    <!-- category nav -->
+    <view class='category'>
+      <block wx:for="{{category}}" wx:key="item.id">
+        <text data-idx="{{index}}" class="{{currentTab==index ? 'active' : ''}}" bindtap="navbarTap">{{item.text}}</text>
+      </block>
+    </view>
+    <view class="nav_section">
+
+      <block wx:for="{{article}}" >
+        <view class="lists-box" bindtap='content' data-id='{{item.id}}'>
+          <view class="item-img">
+            <image src="{{item.img}}" mode="scaleToFill"></image>
+          </view>
+          <text class="item-title">{{item.title}}</text>
+          <view class="zhuti">
+            <text>{{item.type}}</text>
+            <text>{{item.time}}</text>
+            <text>评论:{{item.comments}}</text>
+            <text>赞:{{item.likes}}</text>
+          </view>
+        </view>
+      </block>
+      <view class="weui-loadmore" hidden="{{isHideLoadMore}}">
+        <view class="weui-loading"></view>
+        <view class="weui-loadmore__tips">正在加载</view>
+      </view>
+      <view hidden="{{isHideLoadMore2}}" class="zuihou">没有更多了</view>
+    </view>
+  </view>
+</view>

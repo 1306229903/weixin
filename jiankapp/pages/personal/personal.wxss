@@ -1,0 +1,144 @@
+page{
+  background: #e6e6e6
+}
+/* header */
+.header{
+  background: #3CB371;
+  color: #fff;
+ overflow:hidden;
+  position: relative
+}
+.headview{
+  display: flex;
+align-items: center ;
+margin-top:50rpx ;
+padding-left:10rpx;
+padding-right: 10rpx ;
+flex-wrap: wrap
+  
+}
+.headview image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 100rpx;
+margin-left: 20rpx;
+margin-right:20rpx;
+}
+.headview text{
+  font-size: 36rpx;
+  overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+
+}
+.headview view{
+  font-size: 28rpx;
+  position: absolute;
+  right: 50rpx;
+top: 50rpx;
+}
+.headview view::before{
+ content:"" ;
+background-size:40rpx 40rpx ;   
+width:40rpx ;   
+height:40rpx ;   
+display: inline-block;
+background-image:url(https://mrxiao6.me/static/img/sign.png);  
+vertical-align: bottom;
+margin-right: 10rpx
+
+}
+.money{
+  display: flex;
+justify-content: center;
+align-items: center;
+flex-direction:column;
+margin-top: 50rpx;
+margin-bottom: 20rpx;
+
+}
+.money image{
+  width: 80rpx;
+  height: 80rpx; 
+}
+/* tool */
+.tool{
+  background: #fff
+}
+.firsttype{
+  color: #008FD1
+}
+.secondtype{
+color: #32CD32
+}
+.thirdtype{
+  color:  #9966CC
+}
+.tool .tooltext{
+  display: block;
+  padding: 30rpx;
+  border-bottom: solid 1rpx #e6e6e6;
+  color: #2a5caa;
+ 
+
+}
+.tool .tooltext::before{
+content: "";
+padding-right:20rpx; 
+border-left: 10rpx solid #2a5caa;
+
+ }
+.toolflex{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20rpx;
+ padding-bottom: 20rpx
+}
+.toolstype{
+ display: flex;
+flex-direction: column;
+align-items: center
+
+}
+.toolstype text{
+  display: block;
+  font-size: 30rpx;
+}
+.toolstype image{
+  width: 60rpx;
+  height: 60rpx
+}
+/* nav */
+.nav{
+  background: #FFF;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+
+}
+.navview{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  align-items: center;
+  border-bottom: 2rpx solid #e6e6e6;
+ 
+}
+.navview .left{
+  display: flex;
+  align-items: center
+
+}
+.left text{
+  font-size: 32rpx
+} 
+.navview .set{
+width:70rpx;
+height: 70rpx;
+padding:0  10rpx ; 
+
+}
+.navview .arrow{
+  width: 40rpx;
+height:  40rpx;
+
+}

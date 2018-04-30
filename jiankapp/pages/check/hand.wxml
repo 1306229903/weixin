@@ -1,0 +1,81 @@
+<!--pages/check/hand.wxml-->
+
+<!-- 引入toast框 -->
+<import src="../../components/toast.wxml" />
+<template is="toast" data="{{ ...$wux.toast }}" />
+
+
+<view class='main'>
+  <view class='kuai'>
+    <text>测量日期</text>
+    <text>{{year}}</text>
+  </view>
+  <view class='kuai'>
+    <text>测量时间</text>
+    <text>{{hour}}</text>
+  </view>
+  <view class='kuai' wx:if="{{id==0}}">
+    <text>体重(kg)</text>
+    <input placeholder='请输入测量值' maxlength='5' bindinput="bindinput"></input>
+  </view>
+  <view class='kuai' wx:if="{{id==1}}">
+    <text>心率(bpm)</text>
+    <input placeholder='请输入测量值' maxlength='4' bindinput="bindinput"></input>
+  </view>
+  <view class='kuai' wx:if="{{id==2}}">
+    <text>伸缩压(mmHg)</text>
+    <input placeholder='请输入测量值' maxlength='4' bindinput="bindinput"></input>
+  </view>
+  <view class='kuai' wx:if="{{id==2}}">
+    <text>舒张压(mmHg)</text>
+    <input placeholder='请输入测量值' maxlength='4' bindinput="bindinputsz"></input>
+  </view>
+  <view class='kuai' wx:if="{{id==3}}">
+    <text>体温(℃)</text>
+    <input placeholder='请输入测量值' maxlength='4' bindinput="bindinput"></input>
+  </view>
+  <view class='kuai' wx:if="{{id==5}}">
+    <text>睡眠(h)</text>
+    <input placeholder='请输入测量值' maxlength='4' bindinput="bindinput"></input>
+  </view>
+  <view wx:if="{{id==6}}" class='diet'>
+    <form class="page__bd" catchsubmit="formSubmit" catchreset="formReset">
+      <view wx:for="{{dietlist}}" class='dietfor'>
+        <text class='title'>{{item.title}}</text>
+        <radio-group class="radio-group" name="{{item.radioname}}">
+          <label class="radio">
+            <radio value="0" />是
+          </label>
+          <label class="radio">
+            <radio value="1" />偶尔
+          </label>
+          <label class="radio">
+            <radio value="2" />否
+          </label>
+        </radio-group>
+      </view>
+      <button hover-class='none' formType="submit" class='buttonx'>保存</button>
+    </form>
+  </view>
+
+    <view wx:if="{{id==7}}" class='diet'>
+    <form class="page__bd" catchsubmit="formSubmits" catchreset="formReset">
+      <view wx:for="{{statulist}}">
+        <text class='title'>{{item.title}}</text>
+        <radio-group class="radio-groups"  name="{{item.radioname}}">
+          <label class="radio">
+            <radio value="3" />{{item.one}}
+          </label>
+          <label class="radio">
+            <radio value="2" />{{item.two}}
+          </label>
+          <label class="radio">
+            <radio value="1" />{{item.three}}
+          </label>
+        </radio-group>
+      </view>
+      <button hover-class='none' formType="submit" class='buttonx'>保存</button>
+    </form>
+  </view>
+</view>
+<button hover-class='none' bindtap='savedata' hidden='{{id==6||id==7?true:false}}'>保存</button>

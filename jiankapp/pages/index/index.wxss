@@ -1,0 +1,142 @@
+/**index.wxss**/
+/* 轮播图 */
+.swiper{
+position:relative;
+}
+.page-body{
+
+}
+/* 搜索 */
+.searchview{
+  position: relative;
+  margin:30rpx auto;
+  border:1rpx solid  #ccc;
+   width: 75%;
+   border-radius:16rpx ;
+   display: flex;
+   justify-content: space-between
+}
+.searchview input{
+padding:10rpx 20rpx;
+font-size: 30rpx;
+width: 90%
+
+}
+.input-placeholder{
+ color: #bfbfbf;
+}
+.searchview icon{
+background: #3CB371;
+padding: 10rpx 20rpx;
+border-top-right-radius: 10rpx;
+border-bottom-right-radius: 10rpx;
+}
+
+.swiper text{
+  position: absolute;
+  bottom: 60rpx;
+  color: #fff;
+  padding: 0 24rpx;
+}
+.swiper_box{
+  height: 300rpx;
+
+
+}
+.slide-image{
+     height: 300rpx;
+       width: 100%
+}
+
+/* 导航对应内容项 */
+.category {
+  border-bottom: 1rpx solid #e6e6e6;
+  margin: 5rpx 0;
+}
+.category text{
+  display: inline-block;
+  font-size: 28rpx;
+  margin: 20rpx 0 0 0;
+  padding-left:10rpx;
+  padding-right: 10rpx ;
+  padding-bottom: 20rpx
+  
+}
+.active{
+color: #32CD32;
+border-bottom:2rpx solid #32CD32 ;
+}
+/* 主内容 */
+.nav_section{
+    width:100%;
+   
+}
+.lists-box {
+  /*margin-top: 20rpx;*/
+  border-bottom:2rpx solid #e6e6e6;
+  margin-bottom: 20rpx;
+  overflow: hidden;
+    position: relative
+}
+
+
+
+.item-img image {
+  width:200rpx;
+  height: 200rpx;
+}
+.item-img{
+  margin: 3%;
+  float: left;
+}
+
+.item-title {
+  display: block;
+  padding: 12rpx 30rpx 0;
+  font-size: 36rpx;
+  color: #444;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top:10rpx  
+}
+
+.zhuti{
+  font-size:28rpx;
+  position: absolute;
+  bottom:36rpx;
+  left: 250rpx;
+  color: #A9A9A9
+
+
+}
+.zhuti text{
+  margin-right:30rpx;
+   
+}
+/*  加载更多   */
+.weui-loading {
+  margin: 0 10rpx;
+  width: 46rpx;
+  height: 46rpx;
+  display: inline-block;
+  vertical-align: middle;
+  background: transparent url(https://mrxiao6.me/static/img/5-121204193R0-50.gif) no-repeat;
+  background-size: 100%;
+}
+.weui-loadmore {
+  width: 65%;
+  margin: 20rpx auto;
+  font-size:28rpx;
+  text-align: center;
+   color: #888
+}
+.weui-loadmore__tips {
+  display: inline-block;
+  vertical-align: middle;
+}
+.zuihou{
+  font-size:28rpx;
+  text-align: center;
+  color: #888;
+  padding-bottom: 5rpx
+}

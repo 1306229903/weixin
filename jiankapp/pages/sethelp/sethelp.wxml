@@ -1,0 +1,51 @@
+<!--pages/sethelp/sethelp.wxml-->
+<view class='nav'>
+  <view class='navview'>
+    <view class='left'>
+      <text>修改登录密码</text>
+    </view>
+    <image src='/images/arrowdown.png' class='arrow'></image>
+  </view>
+  <view class='navview'>
+    <view class='left'>
+      <text>修改绑定手机</text>
+    </view>
+    <image src='/images/arrowdown.png' class='arrow'></image>
+  </view>
+</view>
+<view class='nav'>
+  <view class='navview'>
+    <view class='left'>
+      <text>清除缓存</text>
+    </view>
+    <image src='/images/arrowdown.png' class='arrow'></image>
+  </view>
+</view>
+<view class='nav'>
+  <view class='navview'>
+    <view class='left'>
+      <text>帮助</text>
+    </view>
+    <image src='/images/arrowdown.png' class='arrow'></image>
+  </view>
+  <view class='navview'>
+    <view class='left'>
+      <text>声明</text>
+    </view>
+    <image src='/images/arrowdown.png' class='arrow'></image>
+  </view>
+</view>
+<view class='nav'>
+  <view class='navview'>
+    <view class='left'>
+      <text>检查版本</text>
+    </view>
+    <view class='banben'>
+       <text>V1.0</text> 
+       <image src='/images/arrowdown.png' class='arrow'></image>
+       </view>
+  </view>
+</view>
+  <view class='nav exit'>
+  <button hover-class='none' type='warn'  bindtap='exit'>退出</button>
+  </view>

@@ -1,0 +1,56 @@
+/* pages/check/hand.wxss */
+page{
+  background: #e6e6e6
+}
+.main{
+  background: white;
+  font-size: 36rpx;
+  margin-bottom: 50rpx;
+}
+.kuai{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #dbdbdb
+}
+input{
+  text-align: right
+}
+button{
+  background: #7D4F9E;
+  color: #fff;
+  width: 80%;
+  font-size: 34rpx;
+}
+.diet{
+padding: 50rpx 20rpx;
+padding-bottom: 0;
+
+}
+.dietfor{
+
+}
+.radio{
+  font-size: 30rpx;
+  color: #777
+}
+.title{
+  font-size: 36rpx
+}
+.radio-group{
+  margin: 20rpx 0;
+  display: flex;
+  justify-content: space-around;
+}
+.radio-groups{
+   margin: 20rpx 0;
+    display: flex;
+    flex-direction: column
+}
+radio .wx-radio-input{ 
+  width: 30rpx;
+  height: 30rpx
+  } 
+  .buttonx{
+    margin-top: 100rpx
+  }

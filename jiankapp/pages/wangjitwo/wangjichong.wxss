@@ -1,0 +1,30 @@
+page {
+  background: #fff;
+}
+
+.text {
+  text-align: center;
+  font-size: 36rpx;
+  margin-top: 100rpx;
+  margin-bottom: 60rpx;
+}
+
+.inputcla input {
+  padding: 10rpx;
+}
+.input-placeholder{
+  color: #999
+}
+.inputcla {
+  width: 80%;
+  margin:30rpx auto;
+  border: 1rpx solid #e6e6e6;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+button {
+  color: #fff;
+  width: 80%;
+  font-size: 34rpx;
+}

@@ -1,0 +1,19 @@
+<!-- 引入toast框 -->
+<import src="../../components/toast.wxml" />
+<template is="toast" data="{{ ...$wux.toast }}" />
+
+<view class='yantext'>
+  验证码已发送至
+  <text>{{phone}}</text>
+</view>
+<view class='header'>
+  <view class='confirm'>
+    <input placeholder='请输入验证码' type='text' bindinput="inputconfirm"></input>
+    <button size='mini' bindtap='reSendPhoneNum' disabled="{{disabled}}">重新发送({{time}}s)</button>
+  </view>
+
+</view>
+<!-- main -->
+<view class='main'>
+  <button bindtap='confirm'>验证</button>
+</view>

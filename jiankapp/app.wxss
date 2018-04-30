@@ -1,0 +1,13 @@
+/**app.wxss**/
+
+@import 'components/wux.wxss';
+@import 'assets/styles/weui.wxss';
+page{
+   height: 100%; 
+   font-family: Arial, Helvetica, sans-serif;
+   background: #fbf9fe
+}
+.container {
+  display: flex;
+  flex-direction: column;
+} 

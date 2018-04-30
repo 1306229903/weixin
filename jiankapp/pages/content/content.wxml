@@ -1,0 +1,54 @@
+<!-- 引入toast框 -->
+<import src="../../components/toast.wxml" />
+<template is="toast" data="{{ ...$wux.toast }}" />
+
+<view class="container">
+  <scroll-view scroll-y="true" class="page-body" bindscrolltolower="loadMore">
+    <!-- header -->
+
+    <view class='header'>
+      <text class='title'>{{title}}</text>
+      <view class='yintext'>
+        <view class=''>
+          <text class='cate'>{{types}}</text>
+          <text class='dian'>·</text>
+          <text class='time'>{{time}}</text>
+        </view>
+        <text>作者：{{author}}</text>
+      </view>
+      <image src='{{img}}'></image>
+    </view>
+    <!-- main -->
+
+    <view class='main'>
+      <text class='maintext'>
+ {{contents}}
+  </text>
+      <view class='top'>
+        <view class="{{currentTab? 'like' : 'likehover'}}" bindtap='dianzan'>{{likes}}+</view>
+        <view class='comment' bindtap='pinglun'>{{comments}}+</view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <!--评论盒子-->
+  <view class="cf-bg" catchtap="cemojiCfBg" style="display:{{cfBg ? 'block' : 'none'}}"></view>
+  <view class="comment-fixed">
+    <view class="cf-box">
+      <view class="emoji iconfont icon-emoji" catchtap="emojiShowHide"></view>
+      <textarea class="cf-content" bindfocus="textAreaFocus" maxlength="200" bindblur="textAreaBlur"  value="{{content}}" placeholder="我要评论" fixed="true" show-confirm-bar="false"/>
+      <text class="cf-send touch-active" bindtap="send">发送</text>
+    </view>
+
+    <!--emoji表情盒子-->
+    <view class="emoji-box {{isShow ? 'emoji-move-in' : 'emoji-move-out'}} {{isLoad ? 'no-emoji-move' : ''}}">
+      <scroll-view scroll-y="true" bindscroll="emojiScroll" style="height:200px">
+        <block wx:for="{{emojis}}" wx:for-item="e" wx:key="">
+          <view class="emoji-cell">
+            <image class="touch-active" catchtap="emojiChoose" src="http://soupu.oss-cn-shanghai.aliyuncs.com/emoji/{{e.emoji}}.png" data-emoji="{{e.char}}" data-oxf="{{e.emoji}}"></image>
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+</view>
