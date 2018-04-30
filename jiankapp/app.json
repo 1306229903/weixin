@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/personal/personal",
+    "pages/around/around",
+    "pages/step/stepset",
+    "pages/check/check",
+    "pages/step/step",
+    "pages/check/heladvice",
+    "pages/check/hand",
+    "pages/record/record",
+    "pages/sethelp/sethelp",
+    "pages/register/register",
+    "pages/confirm/confirm",
+    "pages/mine/name",
+    "pages/mine/mine",
+    "pages/money/money",
+    "pages/money/deposit",
+    "pages/login/phone",
+    "pages/record/my",
+    "pages/content/content",
+    "pages/pinglun/pinglun",
+    "pages/searchye/searchye",
+    "pages/wangji/wangji",
+    "pages/wangjitwo/wangjitwo",
+    "pages/wangjitwo/wangjichong"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#426ab3",
+    "navigationBarTitleText": "康动我心"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#426ab3",
+    "backgroundColor": "#F5F5F5",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabBar/home.png",
+        "selectedIconPath": "images/tabBar/home_act.png"
+      },
+      {
+        "pagePath": "pages/around/around",
+        "text": "附近",
+        "iconPath": "images/tabBar/around.png",
+        "selectedIconPath": "images/tabBar/around_act.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "images/tabBar/me.png",
+        "selectedIconPath": "images/tabBar/me_act.png"
+      }
+    ]
+  },
+  "debug": true
+}

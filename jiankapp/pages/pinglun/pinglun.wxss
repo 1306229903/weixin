@@ -1,0 +1,47 @@
+.container{
+  height: 100%;
+  background: #F5F5F5
+}
+
+#max{
+  display: flex;
+  align-items: center;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+}
+ #max .left image{
+  width:120rpx;
+  height: 120rpx;
+  border-radius: 200rpx;
+
+
+}
+#max .left{
+  margin-right: 20rpx
+}
+ #max .right .username{
+   font-size: 32rpx;
+   margin-bottom: 10rpx;
+   color: #333
+ }
+ #max .right .time{
+   font-size:26rpx;
+   color: #999
+ }
+.zhumain{
+     font-size:36rpx;
+       border-bottom: 1rpx solid #e6e6e6;
+       padding: 10rpx 10rpx 30rpx 160rpx
+  }
+
+.infohave{
+  display: flex;
+  color: #888;
+justify-content: center;
+align-items: center;
+margin-top: 20rpx
+
+}
+.infohave text{
+  margin-left: 10rpx
+}

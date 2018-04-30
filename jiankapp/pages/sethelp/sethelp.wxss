@@ -1,0 +1,52 @@
+/* pages/sethelp/sethelp.wxss */
+page{
+  background: #e6e6e6
+}
+.nav{
+  background: #FFF;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+
+}
+.navview{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+  border-bottom: 2rpx solid #e6e6e6;
+ 
+ 
+}
+.navview .left{
+  display: flex;
+
+}
+.left text{
+  font-size: 32rpx
+} 
+.navview .set{
+width:70rpx;
+height: 70rpx;
+padding:0  10rpx ; 
+
+}
+.navview .arrow{
+  width: 40rpx;
+height:  40rpx;
+
+}
+.banben{
+  display: flex;
+    font-size: 32rpx
+}
+.banben text{
+  padding-right: 20rpx
+}
+.exit{
+background: inherit;
+margin-top: 100rpx
+}
+.exit button{
+  color: #fff;
+  width: 80%;
+  font-size: 34rpx;
+}

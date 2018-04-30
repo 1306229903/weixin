@@ -1,0 +1,85 @@
+
+<import src="moren.wxml" />
+
+<!-- 引入toast框 -->
+<import src="../../components/toast.wxml"/>
+<template is="toast" data="{{ ...$wux.toast }}"/>
+
+<scroll-view scroll-y="true" class="page-body" bindscrolltolower="loadMore">
+<!-- header -->
+  <view class="header">
+    <view class='headview'>
+      <template is="{{item.username ? 'user' : 'usermoren'}}" 
+      data="{{item}}"/>
+      <view bindtap='sign'>每日签到</view>
+    </view>
+    <view class='money'>
+      <text>{{sign}}</text>
+      <image src='/images/coins.png'></image>
+    </view>
+  </view>
+  <!-- tool -->
+
+  <view class='tool'>
+    <text class='tooltext'>推荐工具</text>
+    <view class='toolflex'>
+      <view class='toolstype' bindtap='step'>
+        <image src='/images/step.png'></image>
+        <text class='firsttype'>计步器</text>
+      </view>
+      <view class='toolstype' bindtap='check'>
+        <image src='/images/check.png'></image>
+        <text class='secondtype'>健康检测</text>
+      </view>
+      <view class='toolstype'>
+        <image src='/images/plan.png'></image>
+        <text class='thirdtype'>健康计划</text>
+      </view>
+    </view>
+  </view>
+  <!-- nav -->
+
+  <view class='nav'>
+
+    <view class='navview' bindtap="record">
+      <view class='left'>
+        <image src='/images/dang.png' class='set'></image>
+        <text>健康档案</text>
+      </view>
+      <image src='/images/arrowdown.png' class='arrow'></image>
+    </view>
+  </view>
+  <view class='nav'>
+    <view class='navview' bindtap='mine'>
+      <view class='left'>
+        <image src='/images/user.png' class='set'></image>
+        <text>我的个人信息</text>
+      </view>
+      <image src='/images/arrowdown.png' class='arrow'></image>
+    </view>
+    <view class='navview' bindtap='money'>
+      <view class='left'>
+        <image src='/images/money.png' class='set'></image>
+        <text>我的财富</text>
+      </view>
+      <image src='/images/arrowdown.png' class='arrow'></image>
+    </view>
+  </view>
+  <view class='nav'>
+    <view class='navview' bindtap='sethelp'>
+      <view class='left'>
+        <image src='/images/setting.png' class='set'></image>
+        <text>设置与帮助</text>
+      </view>
+      <image src='/images/arrowdown.png' class='arrow'></image>
+    </view>
+    <view class='navview' bindtap='recommend'>
+      <view class='left'>
+        <image src='/images/share.png' class='set'></image>
+        <text>推荐给朋友</text>
+      </view>
+      <image src='/images/arrowdown.png' class='arrow'></image>
+    </view>
+  </view>
+
+</scroll-view>

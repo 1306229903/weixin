@@ -1,0 +1,11 @@
+<!-- 引入toast框 -->
+<import src="../../components/toast.wxml" />
+<template is="toast" data="{{ ...$wux.toast }}" />
+
+<view  class="text">
+重新设置您的密码
+</view>
+<view class='maink'>
+<view class='inputcla'><input placeholder='新密码' maxlength='20' bindinput="inputphone" type='password'></input></view>
+<button type="primary" bindtap='chongzhi'>确认重置</button>
+</view>

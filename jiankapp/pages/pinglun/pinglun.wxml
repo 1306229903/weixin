@@ -1,0 +1,20 @@
+<view class="{{hide ? '':'container'}}">
+   <view wx:for="{{all}}">
+    <view id='max'>
+      <view class='left'>
+        <image src="{{item.photo}}"></image>
+      </view>
+      <view class='right'>
+        <view class='username'>{{item.username}}</view>
+        <view class='time'>{{item.time}}</view>
+      </view>
+    </view>
+    <view class='zhumain'>
+     {{item.content}}
+    </view>
+  </view> 
+  <view hidden='{{hide}}' class='infohave'>
+<icon type="info" size="40" color="#ccc"></icon>
+<text>暂无评论</text>
+</view>
+</view>

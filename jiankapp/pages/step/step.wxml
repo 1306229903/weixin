@@ -1,0 +1,30 @@
+<!--pages/step/step.wxml-->
+<view class="wrap">
+  <view class='tap'>
+    <view class='tapbig' wx:for="{{list}}" wx:for-index="idx">
+      <view bindtap='bian' data-id='{{idx}}' class="tapsmall {{activeIndex == idx ? 'hovertap' : ''}}">
+        {{item}}</view>
+    </view>
+  </view>
+  <view class='cent'>{{Y}}年{{M}}月{{D}}日 星期{{d}}</view>
+  <view class="top">
+    <canvas class="cir" style="width:212px; height:212px;" canvas-id="canvasArc">
+    </canvas>
+    <view class="cc" bindtap='sett'>
+      <text>今日步数</text>
+      <text class='da'>{{tdsteps}}</text>
+      <text>目标:{{msteps}}</text>
+    </view>
+    <view class='dd'></view>
+  </view>
+  <view class='jisuan'>
+    <view>
+      <text class='jivalue'>{{mile}}公里</text>
+      <text>距离</text>
+    </view>
+    <view>
+      <text class='jivalue'>{{kalu}}卡</text>
+      <text>消耗</text>
+    </view>
+  </view>
+</view>

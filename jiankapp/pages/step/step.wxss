@@ -1,0 +1,97 @@
+.wrap{
+  color: #666
+}
+.cir{  
+  display: inline-block;   
+
+}  
+  
+.top{  
+     display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}  
+  
+.cc{  
+  margin-top: -183px;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  border-radius: 200px;
+  padding:32px;
+  width: 90px;
+  height: 90px;
+  background: #eeeeee;
+  z-index: 3
+    
+} 
+.dd{
+  width: 208px;
+  height: 208px;
+  margin-top: -182px;
+  border-radius: 200px;
+  border: 1px solid #eeeeee
+} 
+.da{
+    font-size: 30px;
+    color: #3ea6ff
+}
+.jisuan{
+  margin-top: 30px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+
+
+}
+.jisuan view{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.jisuan view:first-child{
+  margin-right: 80px
+}
+.jivalue{
+  color: #3ea6ff
+}
+.hovertap{
+  background: #3ea6ff;
+  color: #fff
+}
+.tap {
+  font-size: 12px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6
+}
+.tap .tapbig{
+  padding: 2px;
+  border: 2px solid #e6e6e6;
+  width: 24px;
+height: 24px;
+border-radius: 200px;
+}
+.tap .tapsmall{
+
+border-radius: 200px;
+width: 20px;
+height: 20px;
+padding: 2px;
+display: flex;
+justify-content: center;
+align-items: center
+
+}
+.cent{
+  text-align: center;
+  margin: 20px auto;
+  font-size: 14px
+}

@@ -1,0 +1,48 @@
+
+<!-- 引入toast框 -->
+<import src="../../components/toast.wxml"/>
+<template is="toast" data="{{ ...$wux.toast }}"/>
+<view class="header">
+<!-- head -->
+
+  <view class='money'>
+    <text>{{sign}}</text>
+    <image src='/images/coins.png'></image>
+    <text class="txiao">每日签到可获取100金币，金币可以提现到微信钱包
+    每满两千后方可提现</text>
+  </view>
+
+  <!-- center -->
+<view class="center">
+  <view class="contain centertainpre">
+    <view>
+      <text>{{sign}}</text>
+      <text>可提现金币</text>
+    </view>
+  </view>
+  <view class="contain centertain">
+    <view>
+      <text>{{moneyused}}</text>
+      <text>已提现金币</text>
+    </view>
+  </view>
+  <view class="contain centertainnt">
+    <view>
+      <text>{{cash}}</text>
+      <text>现金(元)</text>
+    </view>
+  </view>
+</view>
+ <view class="content">
+      <view class="hd" style="">      
+      <!-- transform:rotateZ({{angle}}deg);  -->
+          <image class="wave" src="/images/wave.png" mode="aspectFill"></image>
+          <image class="wave wave-bg" src="/images/wave.png" mode="aspectFill"></image>
+      </view>
+    </view>
+
+</view>
+
+
+  <button hover-class='none' bindtap="tixian">立即提取</button>
+

@@ -1,0 +1,34 @@
+<!--pages/around/login.wxml-->
+
+<!-- 引入toast框 -->
+<import src="../../components/toast.wxml"/>
+<template is="toast" data="{{ ...$wux.toast }}"/>
+
+<view class='header'>
+  <view class='username'>
+    <image src='/images/account.png' class=''></image>
+    <input placeholder='请输入手机号' type='text' bindinput="inputphone"></input>
+  </view>
+  <view class='password'>
+    <image src='/images/password.png' class=''></image>
+    <input placeholder='请输入密码' type='password' bindinput="inputpassword"></input>
+  </view>
+ 
+</view>
+ <!-- main -->
+  <view class='main'>
+  <button bindtap="login">登录</button>
+  <view class='maintext'>
+  <text bindtap='register'>注册账户</text>
+    <text class='xian'>  |  </text>
+    <text bindtap='wangji'>忘记密码</text>
+  </view>
+  </view>
+   <!-- bottom -->
+   <view class='bottom'>
+   <text class='dengxian'>第三方账号登录</text>
+    <view class='weixin' bindtap="getUserInfo">
+       <image src='/images/weixin.png'></image>
+           <text>微信</text>
+    </view>
+   </view>

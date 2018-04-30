@@ -1,0 +1,35 @@
+/* pages/record/my.wxss */
+page{
+  background: #e6e6e6;
+       font-size: 30rpx
+}
+.navbarmain{
+   background: #fff;
+   overflow: hidden
+}
+.navbarfen{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #e6e6e6;
+  background: #fff
+}
+.navbarfen:last-child{
+  margin-bottom: 0
+}
+.navbarfen input{
+text-align: right;
+}
+radio .wx-radio-input {
+  width: 40rpx;
+  height: 40rpx
+}
+button{
+  margin-top: 50rpx;
+  background: #1AAD19;
+  color: #fff;
+  width: 80%;
+  font-size: 34rpx
+}
