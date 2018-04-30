@@ -1,5 +1,0 @@
-<view>12个字符以内，最多6个汉字{{isusername}}</view>
-
- <input value='{{username}}' type='text' bindinput="inputname"
-  maxlength='12'></input>
- <button bindtap='submit' hover-class='none'>确定</button>

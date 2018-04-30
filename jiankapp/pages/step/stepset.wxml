@@ -1,6 +1,0 @@
-<!--pages/step/stepset.wxml-->
-<view class="section section_gap">
-    <slider bindchange="listenerSlider" show-value="true"  max="50000" min="5000" step="100"
-    activeColor="#3ea6ff" backgroundColor="#e6e6e6"/>
-
-  </view>

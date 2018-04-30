@@ -1,5 +1,0 @@
-/* pages/step/stepset.wxss */
-slider{
-  margin-right: 10px;
-  margin-top: 20px
-}

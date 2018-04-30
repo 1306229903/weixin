@@ -1,9 +1,0 @@
-
-var app = getApp()
-
-
-Page({
-  
-
-
-})
